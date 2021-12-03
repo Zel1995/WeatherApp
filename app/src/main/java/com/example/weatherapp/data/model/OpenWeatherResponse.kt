@@ -1,6 +1,6 @@
 package com.example.weatherapp.data.model
 
-import com.example.weatherapp.domain.model.Wind
+import com.example.weatherapp.domain.model.weather.Wind
 import com.google.gson.annotations.SerializedName
 
 data class OpenWeatherResponse(

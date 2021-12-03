@@ -1,4 +1,4 @@
-package com.example.weatherapp.domain.model
+package com.example.weatherapp.domain.model.weather
 
 data class Sys (
     val type: Long,

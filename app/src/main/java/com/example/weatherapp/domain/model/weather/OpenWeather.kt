@@ -1,6 +1,6 @@
-package com.example.weatherapp.domain.model
+package com.example.weatherapp.domain.model.weather
 
-data class WeatherResponse(
+data class OpenWeather(
     val coord: Coord,
     val weather: List<Weather>,
     val base: String,
