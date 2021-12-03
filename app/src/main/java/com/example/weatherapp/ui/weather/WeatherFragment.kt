@@ -1,13 +1,12 @@
 package com.example.weatherapp.ui.weather
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import com.example.weatherapp.R
 import com.example.weatherapp.domain.model.AppState
 import com.example.weatherapp.domain.model.weather.OpenWeather
 import moxy.MvpAppCompatFragment
 import moxy.ktx.moxyPresenter
-import org.koin.java.KoinJavaComponent.inject
+import org.koin.android.ext.android.inject
 
 class WeatherFragment : MvpAppCompatFragment(R.layout.weather_fragment), WeatherContract.View {
     companion object {
@@ -18,6 +17,8 @@ class WeatherFragment : MvpAppCompatFragment(R.layout.weather_fragment), Weather
             }
         }
     }
+    private val weatherPresenter:WeatherPresenter by inject()
+    private val presenter by moxyPresenter { weatherPresenter }
 
     private lateinit var currentCity: String
 

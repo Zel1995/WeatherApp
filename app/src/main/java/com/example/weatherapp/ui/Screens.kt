@@ -6,5 +6,5 @@ import com.github.terrakok.cicerone.androidx.FragmentScreen
 
 object Screens {
     fun weather(city:String ) = FragmentScreen { WeatherFragment.newInstance(city) }
-    fun repos() = FragmentScreen { CitiesFragment() }
+    fun cities() = FragmentScreen { CitiesFragment() }
 }

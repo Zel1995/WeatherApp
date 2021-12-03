@@ -16,6 +16,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
         buildConfigField "String", "BASE_URL", "\"https://api.openweathermap.org/\""
     }
 
@@ -70,6 +71,9 @@ dependencies {
 
     //cicerone
     implementation 'com.github.terrakok:cicerone:7.1'
+
+    //okHttp
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.7.0'
