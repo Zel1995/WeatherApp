@@ -13,6 +13,6 @@ abstract class WeatherContract {
     }
 
     abstract class Presenter : MvpPresenter<View>() {
-        abstract fun onCity(city: String)
+        abstract fun renderData(city: String)
     }
 }

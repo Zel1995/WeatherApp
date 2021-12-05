@@ -9,12 +9,12 @@ class App : Application() {
         super.onCreate()
         startKoin {
             androidContext(this@App)
-            modules(
+            modules(listOf(
                 repositoryModule,
                 routerModule,
                 networkModule,
                 presenterModule,
-                interactorsModule
+                interactorModule)
             )
         }
     }

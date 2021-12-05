@@ -5,8 +5,8 @@ import com.example.weatherapp.domain.model.weather.OpenWeather
 import com.example.weatherapp.domain.repository.WeatherRepository
 import io.reactivex.Single
 
-class WeatherInteractorImpl(private val repository:WeatherRepository):WeatherInteractor<OpenWeather>  {
-    override fun getWeather(): Single<OpenWeather> {
-        TODO("Not yet implemented")
+class WeatherInteractorImpl(private val repository:WeatherRepository): WeatherInteractor{
+    override fun getWeather(cityName:String): Single<AppState<OpenWeather>> {
+        return repository.getWeather(cityName)
     }
 }

@@ -10,7 +10,7 @@ data class OpenWeatherResponse(
     @SerializedName("main") val main: MainResponse,
     @SerializedName("visibility") val visibility: Long,
     @SerializedName("wind") val wind: Wind,
-    @SerializedName("wind") val clouds: CloudsResponse,
+    @SerializedName("clouds") val clouds: CloudsResponse,
     @SerializedName("dt") val dt: Long,
     @SerializedName("sys") val sys: SysResponse,
     @SerializedName("timezone") val timezone: Long,

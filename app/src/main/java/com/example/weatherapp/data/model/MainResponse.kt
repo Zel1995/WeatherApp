@@ -13,6 +13,6 @@ data class MainResponse(
     val tempMax: Double,
     @SerializedName("pressure")
     val pressure: Long,
-    @SerializedName("pressure")
+    @SerializedName("humidity")
     val humidity: Long
 )
